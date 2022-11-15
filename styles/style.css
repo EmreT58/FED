@@ -3,15 +3,13 @@
 /**************/
 *, *::after, *::before {
   box-sizing:border-box;  
+  margin: 0;
+  padding: 0;
 }
 
 button, summary {
 	cursor: pointer;
 }
-
-
-
-
 
 /*********************/
 /* CUSTOM PROPERTIES */
@@ -22,13 +20,25 @@ button, summary {
 	--color-background:#eee;
 }
 
-
-
-
-
 /****************/
 /* JOUW STYLING */
 /****************/
 
 /* jouw code */
 
+header{
+	background-color: indianred;
+	height: 10vh;
+	
+}
+main{
+	background-color: lightblue;
+	height: 80vh;
+}
+section {
+	background-color: yellow;
+}
+footer{
+	background-color: lightgreen;
+	height: 10vh;
+}

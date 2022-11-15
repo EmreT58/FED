@@ -37,7 +37,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Je opdracht:
   https://overwatch.blizzard.com/en-gb/ 
-  (als back-up htt://www.callofduty.com/nl/ , https://www.cyberpunk.net/nl/en/ , https://joinsquad.com/ , https://www.ubisoft.com/nl-nl/ , https://www.ubisoft.com/nl-nl/game/rainbow-six/siege )
+  (als back-up https://www.callofduty.com/nl , https://www.cyberpunk.net/nl/en/ , https://joinsquad.com/ , https://www.ubisoft.com/nl-nl/ , https://www.ubisoft.com/nl-nl/game/rainbow-six/siege )
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   Overview pagina 
