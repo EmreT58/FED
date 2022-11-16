@@ -5,8 +5,15 @@
   box-sizing:border-box;  
   margin: 0;
   padding: 0;
+  font-family: sans-serif;
 }
-
+html {
+	width: 100%;
+}
+button {
+	border-style: none;
+	display: inline-block;
+}
 button, summary {
 	cursor: pointer;
 }
@@ -25,20 +32,69 @@ button, summary {
 /****************/
 
 /* jouw code */
-
-header{
-	background-color: indianred;
+nav {
+	background-color: rgba(229, 235, 244, 0.8);
 	height: 10vh;
-	
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	position: fixed;
+}
+nav img {
+	width: 20px;
+	height: auto;
+	margin: auto;
+}
+nav button {
+	border: none;
+	padding: 0;
+	background: none;
+}
+header{
+	background-color:rgba(27,31,79,.3);
+	height: 95vh;
+	display: flex;
+	justify-content: center;
+	z-index: 1;
+}
+header section {
+	position: relative;
+	border: solid red 1px;
+	margin: auto;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	text-align: center;
+	height: 50vh;
+	padding: 16px;
+}
+header section button {
+	background-color: #f06414;
+	padding: 10px;
+	color: white;
+	font-weight: bolder;
+}
+header video {
+	position: absolute;
+	padding-top: 10vh;
+	z-index: -1;
 }
 main{
-	background-color: lightblue;
-	height: 80vh;
+	height: 50vh;
+	background-image: url(../images/background-image.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 section {
-	background-color: yellow;
+	border: red 1px solid;
 }
 footer{
 	background-color: lightgreen;
-	height: 10vh;
+	height: 50vh;
+}
+img {
+	width: 100%;
+	height: auto;
 }
