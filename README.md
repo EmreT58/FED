@@ -19,7 +19,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Emre Taskopru
 
   #### Je startniveau:
-  Zwarte piste
+  Rode/Zwarte piste
 
   #### Je focus:
   Surface plane (misschien nog veranderen)
