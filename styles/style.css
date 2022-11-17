@@ -10,10 +10,32 @@
 html {
 	width: 100%;
 }
+a {
+	color: lightblue;
+}
+img {
+	width: 100%;
+	height: auto;
+}
 button {
 	border-style: none;
 	display: inline-block;
+	height: auto;
+	margin: 5px;
+	padding: 1em;
+	font-weight: bolder;
+	width: 16em;
 }
+/* primary button */
+main button:nth-last-of-type(1) { 
+	background-color: white ;
+}
+/* Secondary button */
+main button:nth-last-of-type(2) {
+	background-color: #f06414;
+	color: white;
+}
+
 button, summary {
 	cursor: pointer;
 }
@@ -38,17 +60,18 @@ button, summary {
 
 /* jouw code */
 /* NAVIGATIE */
-nav {
+
+/* nav {
 	background-color: rgba(229, 235, 244, 0.8);
 	height: 10vh;
 	width: 100%;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: space-between;
 	position: fixed;
 }
 nav img {
-	width: 20px;
+	width: 3em;
 	height: auto;
 	margin: auto;
 }
@@ -56,6 +79,32 @@ nav button {
 	border: none;
 	padding: 0;
 	background: none;
+} */
+
+nav {
+	background-color: rgba(229, 235, 244, 0.8);
+	height: 10vh;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	position: fixed;
+}
+nav ul {
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: auto;
+	width: 100%;
+}
+nav ul li {
+	width: 1.5em;
+	height: auto;
+	margin: auto;
+}
+nav ul li:nth-of-type(2) {
+	width: 3em;
 }
 /* HEADER LANDING-PAGE VIDEO */
 header {
@@ -67,7 +116,7 @@ header {
 }
 header > section { /*dit kan omgewisseld worden samen met header video */
 	/* position: absolute; */
-	background-color:rgba(45, 45, 45, 0.3);
+	/* background-color:rgba(45, 45, 45, 0.3); */
 	margin: auto;
 	color: white;
 	display: flex;
@@ -75,18 +124,16 @@ header > section { /*dit kan omgewisseld worden samen met header video */
 	justify-content: space-evenly;
 	text-align: center;
 	height: 50vh;
-	padding: 32px;
+	padding: 2em;
 }
 header section button {
+	margin: 0px auto;
 	background-color: #f06414;
-	padding: 10px ;
 	color: white;
 	font-weight: bolder;
-	width: 50%;
-	margin: 0px auto;
 }
 header section button + section {
-	border: 1px solid green;
+	/* border: 1px solid green; */
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -94,8 +141,8 @@ header section button + section {
 	height: auto;
 }
 header section button + section img {
-	height: 47px;
-	width: 47px;
+	height: 3em;
+	width: 3em;
 }
 header video {
 	position: absolute; /*dit kan omgewisseld worden samen met header section*/
@@ -109,32 +156,46 @@ header video {
 }
 /* MAIN CONTENT VAN DE PAGINA */
 main {
+	background-color: lightblue;
 	height: auto;
-	background-image: url(../images/background-image.jpg);
+}
+main article {
+	height: auto;
+}
+main article section {
 	background-size: cover;
 	background-repeat: no-repeat;
-}
-section {
-	border: red 1px solid;
-}
-footer{
-	background-color: lightgreen;
-	height: 50vh;
-}
-img {
-	width: 100%;
-	height: auto;
-}
-article {
-	padding: 15px;
-}
-article section {
-	padding: 5px;
+	background-image: url(../images/background-image.jpg);
+	padding: 1em;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
+}
+main article section:nth-last-of-type(1) {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url(../images/background-image2.jpg);
+	padding: 1em;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	color: white;
 }
 article section h2 {
 padding: 5px 0px;
 }
 /* FOOTER */
+footer{
+	padding: 1em;
+	background: radial-gradient(31.74% 3046.23% at 50% 49.81%,#242a42 0,#121524 100%);
+	height: auto;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+footer img {
+	width: 3em;
+	margin: auto;
+}
