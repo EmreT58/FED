@@ -5,7 +5,7 @@
 	box-sizing:border-box;  
 	margin: 0;
 	padding: 0;
-	font-family: "Config", sans-serif;
+	font-family: "config", sans-serif;
 }
 html {
 	width: 100%;
@@ -48,8 +48,14 @@ button, summary {
 
 @font-face {
 	font-family: "config";
-	src: url(../fonts/Config-Sans-Font-Family/);
+	src: url(../fonts/Config-Sans-Font-Family/Demo_Fonts/Fontspring-DEMO-config-regular.otf);
 }
+
+@font-face {
+	font-family: "noodle";
+	src: url(../fonts/bignoodletitling/big_noodle_titling.ttf);
+}
+
 
 /*********************/
 /* CUSTOM PROPERTIES */
@@ -114,6 +120,12 @@ header > section { /*dit kan omgewisseld worden samen met header video */
 	text-align: center;
 	height: 50vh;
 	padding: 2em;
+}
+header section h2 {
+	font-family: "noodle", sans-serif;
+	font-weight: 400;
+	font-style: italic;
+	font-size: 2.3em;
 }
 header section button {
 	margin: 2em auto;
@@ -243,15 +255,33 @@ hr {
 		justify-content: space-between;
 		align-items: center;
 	}
-	nav:nth-last-of-type(2) ul > {
+	nav:nth-of-type(2) > ul > {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		background-color: red;
+	}
+	nav:nth-of-type(2) ul > ul:nth-of-type(1) > {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		background-color: red;
+	}
+	nav:nth-of-type(2) ul:nth-of-type(2) > {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-evenly;
 	}
-	nav:nth-last-of-type(2) ul:nth-of-type() > {
+	nav:nth-of-type(2) ul:nth-of-type(3) > {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-evenly;
+	}
+	header section h2 {
+		font-family: "noodle", sans-serif;
+		font-weight: 400;
+		font-style: italic;
+		font-size: 4em;
 	}
 	main {
 		background-color: lightblue;
