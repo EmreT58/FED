@@ -125,6 +125,10 @@ header > section {
 	height: 50vh;
 	padding: 2em;
 }
+header section img {
+	width: 35%;
+	margin: auto;
+}
 header section h2 {
 	font-family: "noodle", sans-serif;
 	font-weight: 400;
@@ -180,7 +184,7 @@ main {
 	justify-content: center;
 	width: 100%;
 }
-main article {
+main > article {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-image: url(../images/background-image.jpg);
@@ -189,19 +193,19 @@ main article {
 	justify-content: space-around;
 	width: 100%;
 }
-main article section {
+main > article section {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	padding: 2.5em;
 }
-main article section > section {
+main > article > section > section {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	padding: 2.5em 0em 0em 0em;
 }
-main article:nth-last-of-type(1) {
+main > article:nth-of-type(2) {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-image: url(../images/background-image2.jpg);
@@ -214,11 +218,12 @@ main article section:nth-of-type(1) a {
 	background-color: #f06414;
 	color: white;
 }
-main article img {
-	margin: 3em 2.5em;
+main > article img {
+	margin: 0em 2.5em 3em 2.5em;
 	border-radius: 0.2em;
 	border: 1px solid #FFFFFFB3;
 }
+
 /* FOOTER */
 footer {
 	padding: 2.5em;
@@ -341,6 +346,17 @@ hr {
 		top: 0;
 		left: 0;
 	}
+	header > img {
+		position: absolute; 
+		padding-top: 0em;
+		z-index: -1;
+		object-fit: cover;
+		height: 100%;
+		width: 100%;
+		top: 0;
+		left: 0;
+		background-color: black;
+	}
 	/* desktop main */
 	main {
 		background-color: lightblue;
@@ -351,7 +367,7 @@ hr {
 		justify-content: center;
 		width: 100%;
 	}
-	main article {
+	main > article {
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-image: url(../images/background-image.jpg);
@@ -361,7 +377,7 @@ hr {
 		align-items: flex-start;
 		width: 100%;
 	}
-	main article:nth-last-of-type(1) {
+	main > article:nth-of-type(2) {
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-image: url(../images/background-image2.jpg);
@@ -371,13 +387,13 @@ hr {
 		color: white;
 		flex-flow: row-reverse;
 	}
-	main article section {
+	main > article > section {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		width: 100%;
 	}
-	main article section > section {
+	main > article section > section {
 		display: flex;
 		flex-direction: row;
 		justify-content: flex-start;
@@ -387,3 +403,24 @@ hr {
 		width: 40%;
 	}
   }
+
+  .carousel-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+	align-items: center;
+	border: 1px solid red;
+}
+.carousel {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	border: 1px solid blue;
+}
+.carousel-item {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	border: 1px solid purple;
+}
