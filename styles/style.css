@@ -25,15 +25,15 @@ button {
 	display: inline-block;
 	height: auto;
 	margin: 5px;
-	padding: 1em;
+	padding: 1rem;
 	font-weight: bolder;
-	width: 16em;
+	width: 16rem;
 }
 ul {
 	list-style: none;
 }
 h1, h2, h3, h4, h5, h6 {
-	margin: 1em 0em;
+	margin: 1rem 0rem;
 }
 /* primary button */
 main button:nth-last-of-type(1) { 
@@ -79,13 +79,13 @@ button, summary {
 
 nav:nth-of-type(1) {
 	background-color: rgba(229, 235, 244, 0.8);
-	height: 3.5em;
+	height: 3.5rem;
 	width: 100%;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	position: fixed;
-	padding: 1em;
+	padding: 1rem;
 }
 nav:nth-of-type(1) ul {
 	position: relative;
@@ -101,7 +101,7 @@ nav:nth-of-type(1) ul li {
 	height: auto;
 }
 nav:nth-of-type(1) ul li:nth-of-type(2) {
-	width: 3em;
+	width: 3rem;
 }
 /* dekstop nav */
 nav:nth-of-type(2) {
@@ -123,7 +123,7 @@ header > section {
 	justify-content: space-evenly;
 	text-align: center;
 	height: 50vh;
-	padding: 2em;
+	padding: 2rem;
 }
 header section img {
 	width: 35%;
@@ -133,10 +133,10 @@ header section h2 {
 	font-family: "noodle", sans-serif;
 	font-weight: 400;
 	font-style: italic;
-	font-size: 2.3em;
+	font-size: 2.3rem;
 }
 header section button {
-	margin: 2em auto;
+	margin: 2rem auto;
 	background-color: #f06414;
 	color: white;
 	font-weight: bolder;
@@ -149,12 +149,12 @@ header section button + section {
 	height: auto;
 }
 header section button + section img {
-	height: 3em;
-	width: 3em;
+	height: 3rem;
+	width: 3rem;
 }
 header video {
 	position: absolute; 
-	padding-top: 3.5em;
+	padding-top: 3.5rem;
 	z-index: -1;
 	object-fit: cover;
 	height: 100%;
@@ -165,7 +165,7 @@ header video {
 }
 header > img {
 	position: absolute; 
-	padding-top: 3.5em;
+	padding-top: 3.5rem;
 	z-index: -1;
 	object-fit: cover;
 	height: 100%;
@@ -197,13 +197,13 @@ main > article section {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	padding: 2.5em;
+	padding: 2.5rem;
 }
 main > article > section > section {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 2.5em 0em 0em 0em;
+	padding: 2.5rem 0rem 0rem 0rem;
 }
 main > article:nth-of-type(2) {
 	background-size: cover;
@@ -219,14 +219,14 @@ main article section:nth-of-type(1) a {
 	color: white;
 }
 main > article img {
-	margin: 0em 2.5em 3em 2.5em;
-	border-radius: 0.2em;
+	margin: 0rem 2.5rem 3rem 2.5rem;
+	border-radius: 0.2rem;
 	border: 1px solid #FFFFFFB3;
 }
 
 /* FOOTER */
 footer {
-	padding: 2.5em;
+	padding: 2.5rem;
 	background: radial-gradient(31.74% 3046.23% at 50% 49.81%,#242a42 0,#121524 100%);
 	height: auto;
 	color: white;
@@ -248,7 +248,7 @@ footer section ul li {
 	border: 1px solid yellow;
 }
 footer img {
-	width: 3em;
+	width: 3rem;
 	margin: auto;
 }
 footer figure {
@@ -258,7 +258,7 @@ footer figure {
 	width: 100%;
 }
 hr {
-	margin: 1em;
+	margin: 1rem;
 }
 
 
@@ -266,6 +266,15 @@ hr {
 /* === MEDIA QUERIES === */
 /* ========================= */
 @media only screen and (min-width: 992px) {
+	h1, h2 {
+		font-size: 3.75rem;
+		font-weight: 700;
+		line-height: 66px;
+	}
+	p {
+		font-size: 1.25rem;
+		font-weight: 500;
+	}
 	/* mobile nav */
 	nav:nth-of-type(1) {
 		display: none;
@@ -280,10 +289,10 @@ hr {
 		width: 98%;
 		left: 50%;
 		transform: translateX(-50%);
-		margin-top: 1em;
+		margin-top: 1rem;
 		border-radius: 10px;
-		height: 4.5em;
-		padding: 0.5em;
+		height: 4.5rem;
+		padding: 0.5rem;
 	}
 	nav:nth-of-type(2) > ul {
 		display: flex;
@@ -315,7 +324,7 @@ hr {
 		border: 1px solid green;
 	}
 	nav:nth-of-type(2) > ul > ul:nth-of-type(2) li {
-		margin: 0em 1.5em;
+		margin: 0rem 1.5rem;
 	}
 	nav:nth-of-type(2) > ul > ul:nth-of-type(3) {
 		display: flex;
@@ -327,14 +336,14 @@ hr {
 	}
 	nav:nth-of-type(2) > ul > ul:nth-of-type(3) li {
 		background-color: green;
-		margin: 0em 1.5em;
+		margin: 0rem 1.5rem;
 	}
 	/* desktop header */
 	header section h2 {
 		font-family: "noodle", sans-serif;
 		font-weight: 400;
 		font-style: italic;
-		font-size: 4em;
+		font-size: 4rem;
 	}
 	header video {
 		position: absolute; 
@@ -348,7 +357,7 @@ hr {
 	}
 	header > img {
 		position: absolute; 
-		padding-top: 0em;
+		padding-top: 0rem;
 		z-index: -1;
 		object-fit: cover;
 		height: 100%;
@@ -376,6 +385,8 @@ hr {
 		justify-content: space-around;
 		align-items: flex-start;
 		width: 100%;
+		padding: 0rem 10rem;
+		height: 70vh;
 	}
 	main > article:nth-of-type(2) {
 		background-size: cover;
@@ -390,18 +401,20 @@ hr {
 	main > article > section {
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
-		width: 100%;
+		justify-content: flex-start;
+		margin: 3rem 0rem;
+		width: 45%;
+		padding: 0rem;
 	}
 	main > article section > section {
 		display: flex;
 		flex-direction: row;
 		justify-content: flex-start;
-		padding: 2.5em 0em 0em 0em;
+		padding: 2.5rem 0rem 0rem 0rem;
 	}
 	main article img {
-		margin: 3em 2.5em;
-		width: 40%;
+		margin: 3rem 2.5rem;
+		width: 55%;
 	}
   }
 
