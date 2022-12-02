@@ -223,7 +223,6 @@ main > article > img {
 	border-radius: 0.2rem;
 	border: 1px solid #FFFFFFB3;
 }
-
 /* FOOTER */
 footer {
 	padding: 2.5rem;
@@ -260,8 +259,48 @@ footer figure {
 hr {
 	margin: 1rem;
 }
+/* === Pagina 2 === */
+/* Carosuel code mobile */
+.carousel-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+	align-items: center;
+	border: 1px solid red;
+}
+.carousel-container {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	list-style: none;
+	overflow-x: scroll;
+	overflow-y: hidden;
+	scroll-behavior: smooth;
+	scrollbar-width: none;
+	height: 25rem;
+	border: 2px solid red;
+}
+.carousel-item {
+	display: flex;
+	flex-direction: column-reverse;
+	width: 100%;
+	border: 3px solid green;
+	height: fit-content;
+	margin-right: 1rem;
+	justify-content: center;
+	align-items: center;
+}
+.carousel-item > img {
+	width: 100%;
 
-
+}
+.carousel-container > .carousel-item > img:nth-of-type(1) {
+	width: 3rem;
+	background-color: grey;
+}
 /* ========================= */
 /* === MEDIA QUERIES === */
 /* ========================= */
@@ -321,7 +360,7 @@ hr {
 		justify-content: flex-start;
 		align-items: center;
 		width: 70%;
-		border: 1px solid green;
+		/* border: 1px solid green; */
 	}
 	nav:nth-of-type(2) > ul > ul:nth-of-type(2) li {
 		margin: 0rem 1.5rem;
@@ -333,9 +372,20 @@ hr {
 		align-items: center;
 		border: 1px solid blue;
 		width: 20%;
+		
 	}
 	nav:nth-of-type(2) > ul > ul:nth-of-type(3) li {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: row;
 		background-color: green;
+	}
+	nav:nth-of-type(2) > ul > ul:nth-of-type(3) li img {
+		vertical-align: middle;
+	}
+	nav:nth-of-type(2) > ul > ul:nth-of-type(3) li {
+		/* background-color: green; */
 		margin: 0rem 1.5rem;
 	}
 	/* desktop header */
@@ -386,7 +436,7 @@ hr {
 		align-items: flex-start;
 		width: 100%;
 		padding: 0rem 10rem;
-		height: 70vh;
+		/* height: 70vh; */
 	}
 	main > article:nth-of-type(2) {
 		background-size: cover;
@@ -416,71 +466,43 @@ hr {
 		margin: 3rem 2.5rem;
 		width: 55%;
 	}
+	/* Carosuel code mobile */
+	.carousel-wrapper {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		width: 100%;
+		align-items: center;
+		padding: 3rem;
+	}
+	main > .carousel-wrapper > .carousel-container {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		flex-wrap: nowrap;
+		align-items: center;
+		border: 3px solid red;
+		overflow: hidden;
+		height: auto;
+	}
+	.carousel-item {
+		display: flex;
+		flex-direction: column-reverse;
+		border: 2px solid white;
+		height: auto;
+		margin-right: 0rem 1rem;
+		justify-content: center;
+		align-items: center;
+		background-color: white;
+		border-radius: 0.2rem;
+	}
+	.carousel-item > img {
+		width: 100%;
+	}
+	.carousel-container > .carousel-item > img:nth-of-type(1) {
+		width: 3rem;
+		background-color: grey;
+	}
   }
 
-.carousel-wrapper {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	width: 100%;
-	align-items: center;
-	border: 1px solid red;
-}
-/* .carousel-container {
-	display: flex;
-	flex-direction: row;
-	width: 100%;
-	border: 1px solid blue;
-
-	height: auto;
-	padding-right: 1rem;
-	margin: 0;
-	margin-top: 4rem;
-	margin-bottom: 4rem;
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: column;
-	list-style: none;
-	overflow: scroll;
-	scroll-behavior: smooth;
-	scrollbar-width: none;
-} */
-/* .carousel-item {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	border: 1px solid purple;
-} */
-.carousel-container {
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	justify-content: flex-start;
-	list-style: none;
-	overflow-x: scroll;
-	scroll-behavior: smooth;
-	scrollbar-width: none;
-	border: 5px solid red;
-	height: 20rem;
-}
-.carousel-item {
-	display: flex;
-	flex-direction: column;
-	width: 100%;
-	border: 1px solid green;
-	height: 100%;
-	margin-right: 1rem;
-}
-.carousel-item > img {
-	width: 100%;
-}
-/* #carousel-container {
-	width: 100%;
-	display: flex;
-	flex-direction: row;
-	overflow: scroll;
-	scroll-behavior: smooth;
-	scrollbar-width: none;
-	border: 5px solid red;
-} */
