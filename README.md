@@ -22,7 +22,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Rode/Zwarte piste
 
   #### Je focus:
-  Surface plane (misschien nog veranderen)
+  Responsive
  
 </details>
 
@@ -41,16 +41,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   Overview pagina 
-  <img src="readme-images/home-overview-page.png" width="375px" alt="home overzicht pagina - Mobile full screen capture">
+  <img src="readme-images/" width="375px" alt="Overwatch home pagina overzicht">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   News pagina 
-  <img src="readme-images/news-page" width="375px" alt="Nieuws pagina - Moible full screen capture"
-
-  (back-up pagina)
-  #### Screenshot(s) van de derde (backup) pagina (small screen):
-  Hero detail pagina 
-  <img src="readme-images/hero-detail-page.png" width="375px" alt="Pagina met informatie over een speelbare in-game character - Mobile full screen capture"
+  <img src="readme-images/" width="375px" alt="Hanzo Hero Detail pagina"
   
  
 </details>

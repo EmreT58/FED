@@ -88,7 +88,7 @@ nav:nth-of-type(1) {
 	position: fixed;
 	padding: 1rem;
 }
-nav:nth-of-type(1) ul {
+nav:nth-of-type(1) > ul {
 	position: relative;
 	list-style: none;
 	display: flex;
@@ -101,22 +101,63 @@ nav:nth-of-type(1) ul li {
 	width: auto;
 	height: auto;
 }
+nav:nth-of-type(1) > ul > li > button {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+	width: auto;
+	margin: 0;
+}
 nav:nth-of-type(1) ul li:nth-of-type(2) {
 	width: 3rem;
+}
+nav:nth-of-type(1) > #hbm-container {
+	position: fixed;
+    display: none;
+    flex-direction: column;
+    width: 85%;
+    height: 100%;
+    left: 0px;
+	top: 0px;
+	padding: 1em;
+    overflow: auto;
+    background-color: #ebeff4;
+    transition: left 250ms ease;
+    z-index: 1;
+	/* navbar background darkener: rgba(0,0,0,0.5); */
+}
+
+nav:nth-of-type(1) > header > ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+nav:nth-of-type(1) section header ul li button {
+	background-color: grey;
+	width: 3rem;
+}
+nav:nth-of-type(1) section > ul {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
 }
 /* dekstop nav */
 nav:nth-of-type(2) {
 	display: none;
 }
 /* HEADER LANDING-PAGE VIDEO */
-header {
+body > header {
 	background-color:rgba(27,31,79,.3);
 	height: 95vh;
 	display: flex;
 	justify-content: center;
 	z-index: 1;
 }
-header > section {
+body > header > section {
 	margin: auto;
 	color: white;
 	display: flex;
@@ -126,34 +167,34 @@ header > section {
 	height: 50vh;
 	padding: 2rem;
 }
-header section img {
+body > header section img {
 	width: 35%;
 	margin: auto;
 }
-header section h2 {
+body > header section h2 {
 	font-family: "noodle", sans-serif;
 	font-weight: 400;
 	font-style: italic;
 	font-size: 2.3rem;
 }
-header section button {
+body > header section button {
 	margin: 2rem auto;
 	background-color: #f06414;
 	color: white;
 	font-weight: bolder;
 }
-header section button + section {
+body > header section button + section {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: space-around;
 	width: 100%;
 	height: auto;
 }
-header section button + section img {
+body > header section button + section img {
 	height: 3rem;
 	width: 3rem;
 }
-header video {
+body > header video {
 	position: absolute; 
 	padding-top: 3.5rem;
 	z-index: -1;
@@ -164,7 +205,7 @@ header video {
 	left: 0;
 	background-color: black;
 }
-header > img:nth-of-type(1) {
+body > header > img:nth-of-type(1) {
 	display: flex;
 	position: absolute; 
 	padding-top: 3.5rem;
@@ -176,7 +217,7 @@ header > img:nth-of-type(1) {
 	left: 0;
 	background-color: black;
 }
-header > img:nth-of-type(2), img:nth-of-type(3) {
+body > header > img:nth-of-type(2), header > img:nth-of-type(3) {
 	display: none;
 }
 /* MAIN CONTENT VAN DE PAGINA */
@@ -206,6 +247,7 @@ main > article > section {
 }
 main > article > section > section {
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	padding: 2.5rem 0rem 0rem 0rem;
@@ -415,11 +457,10 @@ main > .carousel-wrapper > .carousel-container > .carousel-item > section:nth-of
 		vertical-align: middle;
 	}
 	nav:nth-of-type(2) > ul > ul:nth-of-type(3) li {
-		/* background-color: green; */
 		margin: 0rem 1.5rem;
 	}
 	nav:nth-of-type(2) > ul > ul:nth-of-type(3) li:nth-of-type(2) {
-
+		
 	}
 	/* desktop header */
 	header section h2 {
@@ -450,7 +491,7 @@ main > .carousel-wrapper > .carousel-container > .carousel-item > section:nth-of
 		left: 0;
 		background-color: black;
 	}
-	header > img:nth-of-type(1), img:nth-of-type(2) {
+	header > img:nth-of-type(1), header > img:nth-of-type(2) {
 		display: none;
 	}
 	/* desktop main */
