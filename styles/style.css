@@ -603,7 +603,7 @@ main > .carousel-wrapper > .carousel-container > .carousel-item > section:nth-of
 	footer article section ul {
 		display: flex;
 		flex-direction: row;
-		justify-content: space-evenly;
+		justify-content: center;
 		width: 100%;
 		flex-wrap: wrap;
 	}
