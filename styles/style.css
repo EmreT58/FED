@@ -423,9 +423,6 @@ main > .carousel-wrapper > .carousel-container > .carousel-item > section:nth-of
 	nav:nth-of-type(1) {
 		display: none;
 	}
-	#hbm-container {
-		transition: ;
-	}
 	/* desktop nav */
 	nav:nth-of-type(2) {
 		background-color: rgba(229, 235, 244, 0.8);
