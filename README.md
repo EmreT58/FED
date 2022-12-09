@@ -37,15 +37,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Je opdracht:
   https://overwatch.blizzard.com/en-gb/ 
-  (als back-up https://www.callofduty.com/nl , https://www.cyberpunk.net/nl/en/ , https://joinsquad.com/ , https://www.ubisoft.com/nl-nl/ , https://www.ubisoft.com/nl-nl/game/rainbow-six/siege )
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   Overview pagina 
-  <img src="readme-images/" width="375px" alt="Overwatch home pagina overzicht">
+  <img src="readme-images/pagina1.jpg" width="375px" alt="Overwatch home pagina overzicht">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   News pagina 
-  <img src="readme-images/" width="375px" alt="Hanzo Hero Detail pagina"
+  <img src="readme-images/pagina2.jpg" width="375px" alt="Hanzo Hero Detail pagina"
   
  
 </details>
@@ -113,26 +112,22 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 1e voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Voor de eerste voortgang gesprek had ik mijn eerste pagina grotendeels af. Een mobile en desktop navigatie bar gemaakt en ook helemaal reponsive gemaakt. Ik hb alleen moeite gehad met het importeren van de custom font die door de originele site werd gebruikt.
 
 
   ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | Calvin         | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  Hulp vragen met het importeren van custom font.
 
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
+  Hulp gevraagd en gekregen met het toevoegen van custom fonts in me website.
+  Ik wist dat je het moest toeveogen met @font-face maar wist niet precies hoe je de font
+  hoort aan te spreken omdat het veel verschillende varianten had. De student assisstent heeft
+  me hierin geholpen door 1 file specifiek aan te spreken en in css hier varianten mee te maken.
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Font-face custom font toegevoegd
+  - 1 font variant gekozen
+  - Verschillende font varianten gemaakt met css (italic, bold, etc.)
 
 </details>
 
@@ -146,25 +141,19 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 2e voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Ik loop al best wel lang vast met het maken van een carousel. Als eerst wou ik dit gaan doen met CSS omdat dat me makkelijk leek. Maar ik had nog niks met javascript gedaan dus ging ik daar eerst desk-research voor doen. Dit bleek een beetje ingewikkeld en onnodig omdat ik libraries moest gebruiken dus heb ik het alsnog met CSS flexbox proberen te doen. Dit duurde 2 tot 3 dagen en was uiteindelijk 10 minuten voor de voortgangsgesprek gelukt.
 
 
   ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
+  Omdat de carousel die ik 2/3 dagen probeerde te maken net 10 minuten voor de voortgangsgesprek was gelukt had ik niet veel om te vragen. Ik heb vooral hulp gevraagd over bepaalde elementen en of deze semantisch correct zijn.
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
+  Ik had vrijweinig te doen deze voortgangsgesprek omdat ik de carousel net voor de les had gefixt na 2 dagen er aan te werken. Ik heb aantal CSS problemen opgelost.
 
-  - punt 1
-  - punt 2
-  - nog een punt
+  - Carousel werkend
+  - Font CSS van de originele site na gemaakt
+  - overal em veranderd naar rem in de CSS omdat het voor problemen zorgde na het veranderen van de 
+    font grootte.
 - ...
 
 </details>
@@ -216,26 +205,20 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 3e voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
+  Ik heb eerst mijn eigen hamburger menu proberen te maken met eigen javascript. Dit werkte maar de manier waar op ik het had gedaan was het niet mogelijk om transities/animatie toe te voegen aan de hamburger menu. Ik had heel lang gezocht naar de hamburger menu opdracht maar kon dit niet vinden omdat het alleen te zien was op kleine scherm. De docent heeft me geholpen met het vinden van de opdracht en heb ik vervolgens dit op mijn eigen manier toegevoegd aan mijn website.
 
   ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  Vragen over responsiveness images die veranderen op groter scherm en semantiek over label in de footer. Vragen over of het nodig is om een tweede media querie te maken voor tussen mobile en desktop.
+  
 
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
+  Vooral zelfstandig werken aan de read.me door terug te kijken in mijn github desktop commits.
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Bewerkte website screenshots toevoegen aan de read.me
+  - Breakdown schets opnieuw maken
+  - Docent vragen over responsiveness
+  - Docent vragen over label semantiek in de footer
 
 </details>
 
@@ -275,8 +258,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. Bron hamburger menu javascript; https://codepen.io/shooft/pen/GRxXboQ 
+  2. Bron Hamburger menu CSS flex:1; idk
+  3. 
 
 </details>
