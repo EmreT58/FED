@@ -353,6 +353,25 @@ hr {
 }
 /* === Pagina 2 === */
 /* Carosuel code mobile */
+#header-pagina2 {
+	background-color: rgba(27,31,79,.3);
+    height: 95vh;
+    display: flex;
+    justify-content: flex-start;
+	align-items: center;
+    z-index: 1;
+}
+#header-pagina2 > section {
+	margin: 0px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: left;
+    height: 50vh;
+    padding: 0;
+	border: 1px solid red;
+}
 main > .carousel-wrapper {
 	display: flex;
 	flex-direction: column;
