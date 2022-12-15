@@ -260,6 +260,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   1. Bron hamburger menu javascript; https://codepen.io/shooft/pen/GRxXboQ 
   2. Bron Hamburger menu CSS flex:1; idk
-  3. 
+  3. https://webdesign.tutsplus.com/articles/keyboard-accessibility-tips-using-html-and-css--cms-31966
 
 </details>

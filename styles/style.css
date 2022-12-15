@@ -12,7 +12,7 @@ html {
 }
 a {
 	color: var(--light-color);
-	display: inline-flex;
+	/* display: inline-flex; */
 }
 nav a {
 	text-decoration: none;
@@ -28,7 +28,8 @@ button {
 	margin: 5px;
 	padding: 1rem;
 	font-weight: bolder;
-	width: 16rem;
+	width: auto;
+	font-size: 1.5rem;
 }
 ul {
 	list-style: none;
@@ -36,6 +37,7 @@ ul {
 h1, h2, h3, h4, h5, h6 {
 	margin: 1rem 0rem;
 	text-transform: uppercase;
+	font-family: "config-header", sans-serif;
 }
 /* primary button */
 main button:nth-last-of-type(1) { 
@@ -50,7 +52,10 @@ main button:nth-last-of-type(2) {
 button, summary {
 	cursor: pointer;
 }
-
+@font-face {
+	font-family: "config-header";
+	src: url(../fonts/Config-Sans-Font-Family/Demo_Fonts/Fontspring-DEMO-config-bold.otf);
+}
 @font-face {
 	font-family: "config";
 	src: url(../fonts/Config-Sans-Font-Family/Demo_Fonts/Fontspring-DEMO-config-regular.otf);
@@ -115,7 +120,7 @@ nav:nth-of-type(1) > ul > li > button {
 	width: auto;
 	margin: 0;
 }
-nav:nth-of-type(1) ul li:nth-of-type(2) {
+nav:nth-of-type(1) > ul li:nth-of-type(2) {
 	width: 3rem;
 }
 /* navbar background darkener: rgba(0,0,0,0.5); */
@@ -131,6 +136,7 @@ nav:nth-of-type(1) ul li:nth-of-type(2) {
 	overflow: auto;
 	transform:translatex(-100%);
 	transition: transform .3s;
+	padding: 0rem 0.5rem;
 }
 #hbm-container.toonMenu {
   transform:translatex(0);
@@ -141,7 +147,6 @@ nav:nth-of-type(1) ul li:nth-of-type(2) {
 	width: 100%;
 	display: flex;
 	flex-direction: row;
-	padding: 1rem;
 }
 #hbm-container header ul {
 	list-style: none;
@@ -180,6 +185,41 @@ nav:nth-of-type(1) section > ul {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
+	padding: 0.75rem;
+}
+nav:nth-of-type(1) section > ul li {
+	display: flex;
+	align-items: center;
+	font-weight: 900;
+	font-size: larger;
+	min-height: 3rem;
+	width: 100%;
+	border: 1px solid red;
+}
+nav:nth-of-type(1) section > ul li:last-of-type {
+	justify-content: center;
+	background-color: #f06414;
+	border-radius: 10px;
+	color: white;
+}
+#hbm-container footer {
+	display: flex;
+	background-color: rgba(0,0,0,0.05);
+}
+#hbm-container footer ul {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	padding: 0.75rem;
+}
+#hbm-container footer ul li {
+	display: flex;
+	align-items: center;
+	font-weight: 900;
+	font-size: larger;
+	min-height: 3rem;
+	width: 100%;
+	border: 1px solid red;
 }
 /* dekstop nav */
 nav:nth-of-type(2) {
@@ -218,11 +258,12 @@ body > header section button {
 	background-color: #f06414;
 	color: white;
 	font-weight: bolder;
+	padding: 1.5rem 2.5rem;
 }
 body > header section button + section {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: space-evenly;
 	width: 100%;
 	height: auto;
 }
@@ -307,42 +348,38 @@ main > article > img {
 	border: 1px solid #FFFFFFB3;
 }
 /* FOOTER */
-footer {
+main + footer {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
 	background: radial-gradient(31.74% 3046.23% at 50% 49.81%,#242a42 0,#121524 100%);
-}
-footer article {
-	height: auto;
 	color: white;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	align-items: center;
 	width: 100%;
 }
-footer article section {
+main + footer section {
 	width: 100%;
 }
-footer article section ul {
+main + footer section ul {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-evenly;
+	justify-content: center;
 	width: 100%;
 	flex-wrap: wrap;
 }
-footer article section ul li {
+main + footer section ul li {
+	color: hsla(0,0%,100%,0.7);
 	display: flex;
 	margin: 0.2rem;
+	padding: 0px 5px;
+	border-right: 1px solid hsla(0,0%,100%,0.7);
 }
-footer article img {
+main + footer section img {
 	width: 3rem;
 	margin: auto;
 }
-footer article section figure{
+main + footer section figure{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
@@ -350,6 +387,7 @@ footer article section figure{
 }
 hr {
 	margin: 1rem;
+	border-color: hsla(0,0%,100%,0.7);
 }
 /* === Pagina 2 === */
 /* Carosuel code mobile */
@@ -471,7 +509,7 @@ main > .carousel-wrapper > .carousel-container > .carousel-item > section:nth-of
 		left: 50%;
 		transform: translateX(-50%);
 		margin-top: 1rem;
-		border-radius: 10px;
+		border-radius: 8px;
 		height: 4.5rem;
 		padding: 0.5rem;
 	}
@@ -484,8 +522,10 @@ main > .carousel-wrapper > .carousel-container > .carousel-item > section:nth-of
 	}
 	nav:nth-of-type(2) > ul > li:nth-of-type(1) {
 		width: 7%;
-		background-color: white;
-		height: 100%;
+		background-color: hsla(0,0%,100%,0.7);
+		height: 130%;
+		border-radius: 8px 0px 0px 8px;
+		margin: -1rem;
 	}
 	nav:nth-of-type(2) > ul > li:nth-of-type(2) {
 		width: 73%;
@@ -517,8 +557,15 @@ main > .carousel-wrapper > .carousel-container > .carousel-item > section:nth-of
 	nav:nth-of-type(2) > ul li {
 		font-weight: bolder;
 		font-size: 18px;
+		height: 100%;
+		display: flex;
+		align-items: center;
 	}
-	nav:nth-of-type(2) > ul > li:nth-of-type(2) > ul li {
+	nav:nth-of-type(2) > ul li ul {
+		height: 100%;
+		width: 100%;
+	}
+	nav:nth-of-type(2) > ul > li:nth-of-type(2) > ul li{
 		margin: 0rem 1.5rem;
 	}
 	nav:nth-of-type(2) > ul > li:nth-of-type(3) > ul li {
@@ -530,15 +577,34 @@ main > .carousel-wrapper > .carousel-container > .carousel-item > section:nth-of
 	nav:nth-of-type(2) > ul > li:nth-of-type(3) > ul li img {
 		vertical-align: middle;
 	}
+	nav:nth-of-type(2) > ul > li:nth-of-type(3) > ul {
+		display: flex;
+		justify-content: flex-end;
+	}
 	nav:nth-of-type(2) > ul > li:nth-of-type(3) > ul li {
 		margin: 0rem 1.5rem;
 	}
+	nav:nth-of-type(2) > ul > li:nth-of-type(3) > ul li:last-of-type {
+		justify-content: center;
+		background-color: #f06414;
+		border-radius: 10px;
+		color: white;
+		padding: 0rem 1.5rem;
+	}
 	/* desktop header pagina 1 */
-	header section h2 {
+	body > header section {
+		height: 100%;
+	}
+	body > header > section > img {
+		width: 35%;
+		margin: auto auto 0 auto;
+	}
+	body > header section h2 {
 		font-family: "noodle", sans-serif;
 		font-weight: 400;
 		font-style: italic;
 		font-size: 4rem;
+		line-height: 70px;
 	}
 	body > header > video {
 		position: absolute; 
@@ -549,6 +615,21 @@ main > .carousel-wrapper > .carousel-container > .carousel-item > section:nth-of
 		width: 100%;
 		top: 0;
 		left: 0;
+	}
+	body > header section button + section {
+		display: none;
+	}
+	body > header section button + section + section {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		width: 100%;
+		height: auto;
+		margin-top: 15%;
+	}
+	body > header section button + section + section img {
+		height: 2rem;
+		width: auto;
 	}
 	/* desktop main */
 	main {
@@ -563,7 +644,6 @@ main > .carousel-wrapper > .carousel-container > .carousel-item > section:nth-of
 	main > article {
 		background-size: cover;
 		background-repeat: no-repeat;
-		background-image: url(../images/background-image.jpg);
 		display: flex;
 		flex-direction: row;
 		justify-content: space-around;
@@ -575,7 +655,6 @@ main > .carousel-wrapper > .carousel-container > .carousel-item > section:nth-of
 	main > article:nth-of-type(2) {
 		background-size: cover;
 		background-repeat: no-repeat;
-		background-image: url(../images/background-image2.jpg);
 		display: flex;
 		flex-direction: row;
 		justify-content: space-around;
@@ -601,7 +680,7 @@ main > .carousel-wrapper > .carousel-container > .carousel-item > section:nth-of
 		width: 55%;
 	}
 	/* FOOTER DESKTOP */
-	footer {
+	main + footer {
 		text-align: center;
 		display: flex;
 		flex-direction: column;
@@ -609,7 +688,7 @@ main > .carousel-wrapper > .carousel-container > .carousel-item > section:nth-of
 		align-items: center;
 		background: radial-gradient(31.74% 3046.23% at 50% 49.81%,#242a42 0,#121524 100%);
 	}
-	footer article {
+	main + footer article {
 		height: auto;
 		color: white;
 		display: flex;
@@ -618,22 +697,22 @@ main > .carousel-wrapper > .carousel-container > .carousel-item > section:nth-of
 		align-items: center;
 		width: 100%;
 	}
-	footer article section ul {
+	main + footer article section ul {
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
 		width: 100%;
 		flex-wrap: wrap;
 	}
-	footer article section ul li {
+	main + footer article section ul li {
 		display: flex;
 		margin: 0.2rem;
 	}
-	footer article img {
+	main + footer article img {
 		width: 3rem;
 		margin: auto;
 	}
-	footer article figure {
+	main + footer article figure {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-evenly;
