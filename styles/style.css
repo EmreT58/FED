@@ -12,7 +12,7 @@ html {
 }
 a {
 	color: var(--light-color);
-	/* display: inline-flex; */
+	display: inline-flex;
 }
 nav a {
 	text-decoration: none;
@@ -27,9 +27,9 @@ button {
 	height: auto;
 	margin: 5px;
 	padding: 1rem;
-	font-weight: bolder;
 	width: auto;
 	font-size: 1.5rem;
+	font-family: "config-header";
 }
 ul {
 	list-style: none;
@@ -39,16 +39,9 @@ h1, h2, h3, h4, h5, h6 {
 	text-transform: uppercase;
 	font-family: "config-header", sans-serif;
 }
-/* primary button */
-main button:nth-last-of-type(1) { 
-	background-color: white ;
+h2, h3, p {
+    text-shadow: 0 4px 10px rgb(0 0 0 / 20%);
 }
-/* Secondary button */
-main button:nth-last-of-type(2) {
-	background-color: #f06414;
-	color: white;
-}
-
 button, summary {
 	cursor: pointer;
 }
@@ -75,6 +68,7 @@ button, summary {
 	--color-text:#111;
 	--color-background:#eee;
 	--light-text-color: #FFFFFFB3;
+	--cta-bg-color: #f06414;
 }
 
 /****************/
@@ -83,6 +77,32 @@ button, summary {
 
 /* jouw code */
 /* NAVIGATIE */
+:focus {
+	outline: invert;
+	outline-offset: 0.2rem;
+}
+a.skip-main {
+    left: -999px;
+    position: absolute;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    z-index: -999;
+}
+a.skip-main:focus {
+    left: auto;
+    top: auto;
+    width: 30%;
+    height: auto;
+    overflow: auto;
+    margin: 0 35%;
+    padding: 0.3rem;
+    font-size: 20px;
+    text-align: center;
+    z-index: 999;
+	background-color: rgba(229, 235, 244, 1);
+}
 ul > li {
 	display: inline-flex;
 }
@@ -123,7 +143,7 @@ nav:nth-of-type(1) > ul > li > button {
 nav:nth-of-type(1) > ul li:nth-of-type(2) {
 	width: 3rem;
 }
-/* navbar background darkener: rgba(0,0,0,0.5); */
+/* hamburger menu background darkener: rgba(0,0,0,0.5); */
 #hbm-container {
 	position:fixed;
 	display:flex;
@@ -134,14 +154,16 @@ nav:nth-of-type(1) > ul li:nth-of-type(2) {
 	top:0;
 	background-color: #ebeff4;
 	overflow: auto;
-	transform:translatex(-100%);
-	transition: transform .3s;
-	padding: 0rem 0.5rem;
+	transform:translatex(-101%);
+	transition: 0.3s;
+	padding: 0.5rem;
+}
+button#hbm-open:focus {
+	outline: 2px solid black;
 }
 #hbm-container.toonMenu {
   transform:translatex(0);
 }
-
 #hbm-container header {
 	height: 3.5rem;
 	width: 100%;
@@ -194,7 +216,6 @@ nav:nth-of-type(1) section > ul li {
 	font-size: larger;
 	min-height: 3rem;
 	width: 100%;
-	border: 1px solid red;
 }
 nav:nth-of-type(1) section > ul li:last-of-type {
 	justify-content: center;
@@ -219,7 +240,10 @@ nav:nth-of-type(1) section > ul li:last-of-type {
 	font-size: larger;
 	min-height: 3rem;
 	width: 100%;
-	border: 1px solid red;
+}
+#hbm-container footer ul li img {
+	width: 1.5rem;
+	margin: 0.2rem;
 }
 /* dekstop nav */
 nav:nth-of-type(2) {
@@ -241,10 +265,12 @@ body > header > section {
 	justify-content: space-evenly;
 	text-align: center;
 	height: 50vh;
-	padding: 2rem;
+}
+body > header > section p {
+	font-family: "config-header", sans-serif;
 }
 body > header > section > img {
-	width: 35%;
+	width: 90%;
 	margin: auto;
 }
 body > header section h2 {
@@ -270,6 +296,9 @@ body > header section button + section {
 body > header section button + section img {
 	height: 3rem;
 	width: 3rem;
+}
+body > header section button + section + section {
+	display: none;
 }
 body > header video {
 	position: absolute; 
@@ -338,9 +367,18 @@ main > article:nth-of-type(2) {
 	justify-content: space-around;
 	color: white;
 }
-main > article > section:nth-of-type(1) > a {
+main button {
+	width: 100%;
+}
+/* primary button */
+main button:nth-of-type(1) {
 	background-color: #f06414;
 	color: white;
+}
+/* Secondary button */
+main button:nth-of-type(2) { 
+	background-color: white ;
+	color: black;
 }
 main > article > img {
 	margin: 0rem 2.5rem 3rem 2.5rem;
@@ -348,6 +386,10 @@ main > article > img {
 	border: 1px solid #FFFFFFB3;
 }
 /* FOOTER */
+footer p {
+	color: hsla(0,0%,100%,0.5);
+	font-size: 0.75rem;
+}
 main + footer {
 	display: flex;
 	flex-direction: column;
@@ -357,6 +399,7 @@ main + footer {
 	background: radial-gradient(31.74% 3046.23% at 50% 49.81%,#242a42 0,#121524 100%);
 	color: white;
 	width: 100%;
+	padding-bottom: 5rem;
 }
 main + footer section {
 	width: 100%;
@@ -379,11 +422,23 @@ main + footer section img {
 	width: 3rem;
 	margin: auto;
 }
-main + footer section figure{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-evenly;
-	width: 100%;
+main + footer label {
+	margin: 1rem 0rem;
+}
+main + footer a {
+	text-decoration: none;
+}
+main + footer label + a {
+	margin: 1rem 0rem;
+}
+main + footer section + p {
+	font-size: 1rem;
+	color: var(--light-color);
+	margin: 2.5rem 0rem;
+}
+main + footer section + p > a {
+	font-size: 1rem;
+	color: #009DFF;
 }
 hr {
 	margin: 1rem;
@@ -409,6 +464,9 @@ hr {
     text-align: center;
     height: 50vh;
     padding: 0.5rem;
+}
+#header-pagina2 > section > p {
+	font-family: "config", sans-serif;
 }
 #header-pagina2 > section > section > ul {
 	display: flex;
@@ -451,17 +509,27 @@ main > .carousel-wrapper > .carousel-container {
 	height: 25rem;
 	color: black;
 }
-main > .carousel-wrapper > .carousel-container > .carousel-item {
+main > .carousel-wrapper > .carousel-container > a {
+	height: auto;
+	background-color: unset;
+	color: unset;
+	text-decoration: unset;
+	width: 45%;
+	margin: 0.5rem;
+}
+main > .carousel-wrapper > .carousel-container > a .carousel-item {
 	display: flex;
 	flex-direction: column-reverse;
 	border: 2px solid white;
 	border-radius: 0.2rem;
-	margin: 0.5rem;
 	overflow: hidden;
 	background-color: hsla(0,0%,100%,.9);
-	width: 45%;
+	width: 100%;
 }
-main > .carousel-wrapper > .carousel-container > .carousel-item > section:nth-of-type(1) {
+main > .carousel-wrapper > .carousel-container > a .carousel-item h3 {
+	font-family: "config", sans-serif;
+}
+main > .carousel-wrapper > .carousel-container > a .carousel-item > section:nth-of-type(1) {
 	background-color: hsla(0,0%,100%,.9);
 	width: 100%;
 	display: flex;
@@ -470,16 +538,20 @@ main > .carousel-wrapper > .carousel-container > .carousel-item > section:nth-of
 	align-items: center;
 	height: 100%;
 }
-main > .carousel-wrapper > .carousel-container > .carousel-item > section:nth-of-type(2) {
+main > .carousel-wrapper > .carousel-container > a .carousel-item > section:nth-of-type(2) {
 	width: 100%;
 	background-image: url(../images2/hero-bg.webp);
 	height: auto;
 }
-main > .carousel-wrapper > .carousel-container > .carousel-item > section:nth-of-type(2) > img {
-	/* width: 100%; */
-}
-main > .carousel-wrapper > .carousel-container > .carousel-item > section:nth-of-type(1) > img:nth-of-type(1) {
+main > .carousel-wrapper > .carousel-container > a .carousel-item > section:nth-of-type(1) > img:nth-of-type(1) {
 	width: 1.6rem;
+	margin-top: 1rem;
+}
+main > .carousel-wrapper > button {
+	background-color: white ;
+	color: black;
+	margin: 3rem 0rem;
+	width: auto;
 }
 /* ========================= */
 /* === MEDIA QUERIES === */
@@ -596,7 +668,7 @@ main > .carousel-wrapper > .carousel-container > .carousel-item > section:nth-of
 		height: 100%;
 	}
 	body > header > section > img {
-		width: 35%;
+		width: 30%;
 		margin: auto auto 0 auto;
 	}
 	body > header section h2 {
@@ -625,7 +697,8 @@ main > .carousel-wrapper > .carousel-container > .carousel-item > section:nth-of
 		justify-content: space-evenly;
 		width: 100%;
 		height: auto;
-		margin-top: 15%;
+		margin-top: 10%;
+		margin-bottom: 3rem;
 	}
 	body > header section button + section + section img {
 		height: 2rem;
@@ -679,6 +752,9 @@ main > .carousel-wrapper > .carousel-container > .carousel-item > section:nth-of
 		margin: 3rem 2.5rem;
 		width: 55%;
 	}
+	main button {
+		width: auto;
+	}
 	/* FOOTER DESKTOP */
 	main + footer {
 		text-align: center;
@@ -722,7 +798,16 @@ main > .carousel-wrapper > .carousel-container > .carousel-item > section:nth-of
 		margin: 1rem;
 	}
 	/* desktop header pagina 2 */
-	header > img:nth-of-type(3) {
+	#header-pagina2 {
+		background-color: rgba(27,31,79,.3);
+		height: 95vh;
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+		z-index: 1;
+		flex-direction: column;
+	}
+	#header-pagina2 > img:nth-of-type(3) {
 		display: flex;
 		position: absolute; 
 		padding-top: 0rem;
@@ -734,16 +819,8 @@ main > .carousel-wrapper > .carousel-container > .carousel-item > section:nth-of
 		left: 0;
 		background-color: black;
 	}
-	header > img:nth-of-type(1), header > img:nth-of-type(2) {
+	#header-pagina2 > img:nth-of-type(1), header > img:nth-of-type(2) {
 		display: none;
-	}
-	#header-pagina2 {
-		background-color: rgba(27,31,79,.3);
-		height: 95vh;
-		display: flex;
-		justify-content: flex-start;
-		align-items: center;
-		z-index: 1;
 	}
 	#header-pagina2 > section {
 		margin: 5vw;
@@ -753,7 +830,7 @@ main > .carousel-wrapper > .carousel-container > .carousel-item > section:nth-of
 		flex-direction: column;
 		justify-content: space-evenly;
 		text-align: left;
-		height: 50vh;
+		height: auto;
 		padding: 0;
 	}
 	#header-pagina2 > section > section > ul {
@@ -762,7 +839,7 @@ main > .carousel-wrapper > .carousel-container > .carousel-item > section:nth-of
 		padding: 0.8rem 0rem;
 	}
 	#header-pagina2 > section > section > ul > li {
-		padding: 0.5rem;
+		padding: 0.8rem;
 	}
 	#header-pagina2 > section > section > ul > li:nth-of-type(1) {
 		background-color: hsla(0,0%,100%,.3);
@@ -793,17 +870,17 @@ main > .carousel-wrapper > .carousel-container > .carousel-item > section:nth-of
 		overflow: hidden;
 		height: auto;
 	}
-	main > .carousel-wrapper > .carousel-container > .carousel-item {
+	main > .carousel-wrapper > a .carousel-container > .carousel-item {
 		display: flex;
 		flex-direction: column-reverse;
 		border: 2px solid white;
-		margin-right: 0rem 1rem;
+		margin-right: 1rem;
 		justify-content: center;
 		align-items: center;
 		background-color: white;
 		border-radius: 0.2rem;
 	}
-	main > .carousel-wrapper > .carousel-container > .carousel-item > section:nth-of-type(1) {
+	main > .carousel-wrapper > .carousel-container > a .carousel-item > section:nth-of-type(1) {
 		background-color: hsla(0,0%,100%,.9);
 		width: 100%;
 		display: flex;
@@ -812,5 +889,8 @@ main > .carousel-wrapper > .carousel-container > .carousel-item > section:nth-of
 		align-items: center;
 		height: 100%;
 	}
+	main > .carousel-wrapper > .carousel-container > a .carousel-item > section:nth-of-type(1) > img:nth-of-type(1) {
+		width: 1.6rem;
+		margin-top: 0rem;
+	}
   }
-

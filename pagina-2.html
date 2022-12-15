@@ -14,12 +14,13 @@
 <!-- Hier begint website -->
 <body>
 	<!-- NAVIGATIE -->
+	<a class="skip-main" href="#main">Skip to main content</a>
 	<!-- navigatie mobile -->
 	<nav>
 		<ul>
 			<li><button id="hbm-open"><img src="images/hamburger-menu.svg" alt="hamburger-menu"></button></li>
-			<li><a href="#"><img src="images/overwatch-logo.svg" alt="overwatch logo"></a></li>
-			<li><a href="#"><img src="images/profile-icon.svg" alt="Account Profile Icon"></a></li>
+			<li><a href="index.html"><img src="images/overwatch-logo.svg" alt="overwatch logo"></a></li>
+			<li><a href="index.html"><img src="images/profile-icon.svg" alt="Account Profile Icon"></a></li>
 		</ul>
 		<section id="hbm-container">
 			<header>
@@ -36,7 +37,15 @@
 				<li><a href="index.html">News</a></li>
 				<li><a href="index.html">Community</a></li>
 				<li><a href="index.html">Shop</a></li>
+				<li><a href="#">Play Now</a></li>
 			</ul>
+			<footer>
+				<ul>
+					<li>MORE FROM BLIZZARD</li>
+					<li><a href="#"><img src="images/blizz-icon.svg" alt="blizzard icon">More from Blizzard.com</a></li>
+					<li><a href="#"><img src="images/apps-icon.svg" alt="all games icon">All Games</a></li>
+				</ul>
+			</footer>
 		</section>
 	</nav>
 	<!-- navigatie desktop -->
@@ -61,7 +70,6 @@
 			<li>
 				<ul>
 					<li><a href="index.html"><img src="images/profile-icon.svg" alt="profile icon">Account</a></li>
-					<!-- <li><a href="index.html">Account</a></li> -->
 					<li><a href="index.html">Play Now</a></li>
 				</ul>
 			</li>
@@ -91,65 +99,76 @@
 		<img src="images2/2600_Hanzo.jpg" alt="hanzo achtergrond foto dekstop">
 	</header>
 	<!-- MAIN CONTENT -->
-	<main>
+	<main id="main">
 		<article class="carousel-wrapper">
 			<h2>OTHER DAMAGE HEROES</h2>
 			<section class="carousel-container">
-				<article class="carousel-item">
-					<section>
-						<h3>Junkrat</h3>
-						<img src="images2/damage-icon.svg" alt="svg icon">
-					</section>
-					<section>
-						<img src="images2/junkrat.png" alt="hero image"/>
-					</section>
-				</article>
-				<article class="carousel-item">
-					<section>
-						<h3>Mei</h3>
-						<img src="images2/damage-icon.svg" alt="svg icon">
-					</section>
-					<section>
-						<img src="images2/mei.png" alt="hero image"/>
-					</section>
-				</article>
-				<article class="carousel-item">
-					<section>
-						<h3>Pharah</h3>
-						<img src="images2/damage-icon.svg" alt="svg icon">
-					</section>
-					<section>
-						<img src="images2/pharah.png" alt="hero image"/>
-					</section>
-				</article>
-				<article class="carousel-item">
-					<section>
-						<h3>Reaper</h3>
-						<img src="images2/damage-icon.svg" alt="svg icon">
-					</section>
-					<section>
-						<img src="images2/reaper.png" alt="hero image"/>
-					</section>
-				</article>
-				<article class="carousel-item">
-					<section>
-						<h3>Sojourn</h3>
-						<img src="images2/damage-icon.svg" alt="svg icon">
-					</section>
-					<section>
-						<img src="images2/sojourn.png" alt="hero image"/>
-					</section>
-				</article>
-				<article class="carousel-item">
-					<section>
-						<h3>Soldier: 76</h3>
-						<img src="images2/damage-icon.svg" alt="svg icon">
-					</section>
-					<section>
-						<img src="images2/soldier76.png" alt="hero image"/>
-					</section>
-				</article>
-
+				<a href="#">
+					<article class="carousel-item">
+						<section>
+							<h3>Junkrat</h3>
+							<img src="images2/damage-icon.svg" alt="svg icon">
+						</section>
+						<section>
+							<img src="images2/junkrat.png" alt="hero image"/>
+						</section>
+					</article>
+				</a>
+				<a href="#">
+					<article class="carousel-item">
+						<section>
+							<h3>Mei</h3>
+							<img src="images2/damage-icon.svg" alt="svg icon">
+						</section>
+						<section>
+							<img src="images2/mei.png" alt="hero image"/>
+						</section>
+					</article>
+				</a>
+				<a href="#">
+					<article class="carousel-item">
+						<section>
+							<h3>Pharah</h3>
+							<img src="images2/damage-icon.svg" alt="svg icon">
+						</section>
+						<section>
+							<img src="images2/pharah.png" alt="hero image"/>
+						</section>
+					</article>
+				</a>
+				<a href="#">
+					<article class="carousel-item">
+						<section>
+							<h3>Reaper</h3>
+							<img src="images2/damage-icon.svg" alt="svg icon">
+						</section>
+						<section>
+							<img src="images2/reaper.png" alt="hero image"/>
+						</section>
+					</article>
+				</a>
+				<a href="#">
+					<article class="carousel-item">
+						<section>
+							<h3>Sojourn</h3>
+							<img src="images2/damage-icon.svg" alt="svg icon">
+						</section>
+						<section>
+							<img src="images2/sojourn.png" alt="hero image"/>
+						</section>
+					</article>
+				</a>
+				<a href="#">
+					<article class="carousel-item">
+						<section>
+							<h3>Soldier: 76</h3>
+							<img src="images2/damage-icon.svg" alt="svg icon">
+						</section>
+						<section>
+							<img src="images2/soldier76.png" alt="hero image"/>
+						</section>
+					</article>
+				</a>
 			</section>
 			<button>SEE ALL HEROES</button>
 		</article>
@@ -176,56 +195,56 @@
 	</main>
 <!-- FOOTER -->
 	<footer>
-		<article>
-			<!-- SOCIAL MEDIA -->
-			<h2>STAY CONNECTED</h2>
-			<section>
-				<a href="#"><img src="images/facebook.svg" alt="Facebook icon"></a>
-				<a href="#"><img src="images/twitter.svg" alt="Twitter icon"></a>
-				<a href="#"><img src="images/youtube.svg" alt="Youtube icon"></a>
-				<a href="#"><img src="images/instagram.svg" alt="Instagram icon"></a>
-			</section>
-			<label for="">English (EU)</label>
-			<img src="images/blizzard-logo.svg" alt="Blizzard logo">
-			<!-- FOOTER NAV 1 -->
-			<section>
-				<ul>
-					<li><a href="#">CARREERS</a></li>
-					<li><a href="#">ABOUT</a></li>
-					<li><a href="#">SUPPORT</a></li>
-					<li><a href="#">CONTACT US</a></li>
-					<li><a href="#">PRESS</a></li>
-					<li><a href="#">API</a></li>
-				</ul>
-			</section>
-			<p>All games, one app:</p><a href="#">Battle.net Desktop App</a>
-			<p>
-				©2022 BLIZZARD ENTERTAINMENT, INC. ALL RIGHTS RESERVED.
-				All trademarks referenced herein are the properties of their respective owners.
-			</p>
-			<!-- FOOTER NAV 2 DISCLAIMER RIGHTS -->
-			<section>
-				<ul>
-					<li><a href="#">PRIVACY</a></li>
-					<li><a href="#">LEGAL </a></li>
-					<li><a href="#">TERMS</a></li>
-					<li><a href="#">COOKIE POLICY</a></li>
-					<li><a href="#">COOKIE SETTINGS</a></li>
-				</ul>
-			</section>
-			<section>
-				<!-- FOOTER NAV 3 DISCLAIMERS AGE LIMIT -->
-				<figure>
-					<img src="images/pegi12.png" alt="Pegi12">
-					<img src="images/bad-language.png" alt="Bad language">
-					<img src="images/violence.png" alt="Violence">
-					<img src="images/ingame-purchases.png" alt="In-Game Purchases">
-				</figure>
-				<hr>
-				<p>In-Game Purchase</p>
-				<p>(Includes Random Items)</p>
-			</section>
-		</article>
+		<!-- SOCIAL MEDIA -->
+		<h2>STAY CONNECTED</h2>
+
+		<section>
+			<a href="#"><img src="images/facebook.svg" alt="Facebook icon"></a>
+			<a href="#"><img src="images/twitter.svg" alt="Twitter icon"></a>
+			<a href="#"><img src="images/youtube.svg" alt="Youtube icon"></a>
+			<a href="#"><img src="images/instagram.svg" alt="Instagram icon"></a>
+		</section>
+
+		<label>English EU</label>
+		<a href="#"><img src="images/blizzard-logo.svg" alt="Blizzard logo"></a>
+
+		<!-- FOOTER NAV 1 -->
+		<section>
+			<ul>
+				<li><a href="#">CARREERS</a></li>
+				<li><a href="#">ABOUT</a></li>
+				<li><a href="#">SUPPORT</a></li>
+				<li><a href="#">CONTACT US</a></li>
+				<li><a href="#">PRESS</a></li>
+				<li><a href="#">API</a></li>
+			</ul>
+		</section>
+
+		<p>All games, one app: <a href="#">Battle.net Desktop App</a></p>
+		<p>©2022 BLIZZARD ENTERTAINMENT, INC. ALL RIGHTS RESERVED.</p>
+		<p>All trademarks referenced herein are the properties of their respective owners.</p>
+
+		<!-- FOOTER NAV 2 DISCLAIMER RIGHTS -->
+		<section>
+			<ul>
+				<li><a href="#">PRIVACY</a></li>
+				<li><a href="#">LEGAL </a></li>
+				<li><a href="#">TERMS</a></li>
+				<li><a href="#">COOKIE POLICY</a></li>
+				<li><a href="#">COOKIE SETTINGS</a></li>
+			</ul>
+		</section>
+
+		<section>
+			<!-- FOOTER NAV 3 DISCLAIMERS AGE LIMIT -->
+				<img src="images/pegi12.png" alt="Pegi12">
+				<img src="images/bad-language.png" alt="Bad language">
+				<img src="images/violence.png" alt="Violence">
+				<img src="images/ingame-purchases.png" alt="In-Game Purchases">
+			<hr>
+			<p>In-Game Purchase</p>
+			<p>(Includes Random Items)</p>
+		</section>
 	</footer>
 	<script defer src="scripts/script.js"></script>
 </body>

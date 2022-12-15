@@ -169,6 +169,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+  - kleine tekst is moeilijk lezen wanneer je hand trilt door parkinsons (niet op de site)
+  - 
 
   #### Screenreader
   Hier korte omschrijving (met indien nodig afbeeldingen)
@@ -178,21 +180,23 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Muis en Toetsenbord 
   Hier korte omschrijving (met indien nodig afbeeldingen)
-
+  De site is makkelijk te navigeren met muis en toetsenbord.
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-
+  Hier zijn niet veel verbeteringen in te maken.
 
   #### Motoriek (shocks, elastiekjes)
   Hier korte omschrijving (met indien nodig afbeeldingen)
+  Telefoon gebruik en navigatie is moeilijk omdat je geen goede controle hebt over je begegingen. Ook tik je makkelijker bepaalde items peronguluk aan omdat je vinger door het trillen tegen je scherm kan tikken.
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-
+  Je kan accidental touches oplossen door de interactie van interactieve elementen te veranderen naar longpress of double click.
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
   Hier korte omschrijving (met indien nodig afbeeldingen)
+  Het is in het algemeen nog redelijk goed te gebruiken. Het kost alleen meer moeite voor de gebruiker.
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-
+  Er is niet veel verandering nodig voor deze. Indien nodig kan je hoger conrast of kleurenblind modus hebben op de site.
 </details>
 
 
@@ -259,7 +263,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
   1. Bron hamburger menu javascript; https://codepen.io/shooft/pen/GRxXboQ 
-  2. Bron Hamburger menu CSS flex:1; idk
+  2. Bron Hamburger menu CSS flex:1; (kan het niet meer vinden)
   3. https://webdesign.tutsplus.com/articles/keyboard-accessibility-tips-using-html-and-css--cms-31966
 
 </details>

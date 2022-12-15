@@ -1,7 +1,4 @@
 // JavaScript Document
-
-
-
 var hbmContainer = document.querySelector('#hbm-container');
 var hbmOpenButton= document.querySelector('#hbm-open'); 
 var hbmCloseButton = document.querySelector('#hbm-close'); 
@@ -27,20 +24,3 @@ function handleKeydown(event) {
     hbmContainer.classList.remove("toonMenu");
   }
 }
-
-
-// first try eigen hamburger menu
-
-// var hbmStatus = false;
-
-// function hamburgerMenu() {
-//     if (hbmStatus == false){
-//         hbmContainer.style.display = "flex";
-//         hbmStatus = true;
-//         }
-//         else {
-//             hbmContainer.style.display = "none";
-//             hbmStatus = false;
-//         }
-// }
-
